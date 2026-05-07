@@ -6,6 +6,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Navbar();
+    return Scaffold(
+      backgroundColor: Color.fromARGB(0, 0, 0, 0),
+      body: Center(child: Navbar()),
+    );
   }
 }

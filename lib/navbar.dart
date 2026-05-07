@@ -6,11 +6,41 @@ class Navbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 0, 0, 0),
-      body: Container(
-        width: 100,
-        height: 100,
-        child: Image.asset("lib/images/logo-amazon-600.png"),
+      body: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            color: Colors.black,
+            height: 200,
+            child: Image.asset("lib/images/logo-amazon-600.png"),
+          ),
+          Column(
+            children: [
+              Container(
+                color: Colors.black,
+
+                child: Text(
+                  "Entraga",
+                  style: TextStyle(
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+              Container(
+                color: Colors.black,
+
+                child: Text(
+                  "Actulitzar ubicacio",
+                  style: TextStyle(
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
